@@ -1,68 +1,68 @@
 package pjtTest;
 
 public class MainClass {
-    // ÇÁ·Î±×·¥À» °¡Àå ¸ÕÀú ½ÇÇàÇÏ´Â ¸Þ¼Òµå
+    // í”„ë¡œê·¸ëž¨ì„ ê°€ìž¥ ë¨¼ì € ì‹¤í–‰í•˜ëŠ” ë©”ì†Œë“œ
     public static void main(String[] args) {
         // sysout : Sh+Space
         System.out.println("Hello Java World~~~");
         System.out.println("--------------------------------------------------");
 
-        //º¯¼ö
+        //ë³€ìˆ˜
         char    c = 'c';                //2byte
         int     i = 10;                 //4byte
         double  d = 10.123;             //8byte
         boolean b = false;              //1byte
         String  s = "Hello Java World";
         
-        System.out.println("¹®ÀÚ char     : " + c);
-        System.out.println("¼ýÀÚ int      : " + i);
-        System.out.println("½Ç¼ö double   : " + d);
-        System.out.println("³í¸® boolean  : " + b);
-        System.out.println("¹®ÀÚ¿­ String : " + s);
+        System.out.println("ë¬¸ìž char     : " + c);
+        System.out.println("ìˆ«ìž int      : " + i);
+        System.out.println("ì‹¤ìˆ˜ double   : " + d);
+        System.out.println("ë…¼ë¦¬ boolean  : " + b);
+        System.out.println("ë¬¸ìžì—´ String : " + s);
         System.out.println("--------------------------------------------------");
 
-        //Çüº¯È¯
+        //í˜•ë³€í™˜
         byte by  = 10;
         int  in1 = 0;
         int  in2 = 100;
         int  in3 = 1000000;
 
-        //ÀÚµ¿Çüº¯È¯ : ÀÛÀº µ¥ÀÌÅÍÇü -> Å« µ¥ÀÌÅÍÇü
+        //ìžë™í˜•ë³€í™˜ : ìž‘ì€ ë°ì´í„°í˜• -> í° ë°ì´í„°í˜•
         in1 = by;
         System.out.println("by : " + by + ", in = byte : " + in1);
 
-        //¸í½ÃÀûÇüº¯È¯ : µ¥ÀÌÅÍ°¡ ´©½ÇµÉ ¼ö ÀÖÀ½
+        //ëª…ì‹œì í˜•ë³€í™˜ : ë°ì´í„°ê°€ ëˆ„ì‹¤ë  ìˆ˜ ìžˆìŒ
         by = (byte)in2;
         System.out.println("in : " + in2 + ", by = (byte)in : " + by);
         by = (byte)in3;
         System.out.println("in : " + in3 + ", by = (byte)in : " + by);
         System.out.println("--------------------------------------------------");
 
-        //Æ¯¼ö¹®ÀÚ
-        System.out.println("ÅÇ   :  Good\tMornig~");
-        System.out.println("°³Çà : Good\nMornig~");
+        //íŠ¹ìˆ˜ë¬¸ìž
+        System.out.println("íƒ­   :  Good\tMornig~");
+        System.out.println("ê°œí–‰ : Good\nMornig~");
         System.out.println("\'   : Good\'Mornig~\'");
         System.out.println("\"   : Good\"Mornig~\"");
         System.out.println("\\   : Good\\Mornig~\\");
         System.out.println("--------------------------------------------------");
 
-        //¼­½Ä(Æ÷¸ä)
-        System.out.printf("num(10Áø¼ö)     : %d\n", 30);
-        System.out.printf("num(8 Áø¼ö)     : %o\n", 30);
-        System.out.printf("num(16Áø¼ö)     : %x\n", 30);
-        System.out.printf("num(½Ç¼öFloat)  : %f\n", 1.12345678f);
-        System.out.printf("num(½Ç¼öDouble) : %f\n", 1.12345678d);
-        System.out.printf("¼Ò¹®ÀÚ \'%c\'ÀÇ ´ë¹®ÀÚ´Â \'%c\'ÀÔ´Ï´Ù.\n", 'a', 'A');
-        System.out.printf("¼Ò¹®ÀÚ \'%s\'ÀÇ ´ë¹®ÀÚ´Â \'%s\'ÀÔ´Ï´Ù.\n", "java", "JAVA");
+        //ì„œì‹(í¬ë©§)
+        System.out.printf("num(10ì§„ìˆ˜)     : %d\n", 30);
+        System.out.printf("num(8 ì§„ìˆ˜)     : %o\n", 30);
+        System.out.printf("num(16ì§„ìˆ˜)     : %x\n", 30);
+        System.out.printf("num(ì‹¤ìˆ˜Float)  : %f\n", 1.12345678f);
+        System.out.printf("num(ì‹¤ìˆ˜Double) : %f\n", 1.12345678d);
+        System.out.printf("ì†Œë¬¸ìž \'%c\'ì˜ ëŒ€ë¬¸ìžëŠ” \'%c\'ìž…ë‹ˆë‹¤.\n", 'a', 'A');
+        System.out.printf("ì†Œë¬¸ìž \'%s\'ì˜ ëŒ€ë¬¸ìžëŠ” \'%s\'ìž…ë‹ˆë‹¤.\n", "java", "JAVA");
         System.out.println("--------------------------------------------------");
 
-        //¼­½Ä(Á¤·Ä)
-        System.out.printf("¿ÞÂÊ   Á¤·Ä : %d\n¿ÞÂÊ   Á¤·Ä : %d\n¿ÞÂÊ   Á¤·Ä : %d\n", 123, 1234,12345);
-        System.out.printf("¿À¸¥ÂÊ Á¤·Ä : %5d\n¿À¸¥ÂÊ Á¤·Ä : %5d\n¿À¸¥ÂÊ Á¤·Ä : %5d\n", 123, 1234,12345);
-        System.out.printf("float         : %f\n¼Ò¼öÁ¡(0ÀÚ¸®) : %.0f\n¼Ò¼öÁ¡(2ÀÚ¸®) : %.2f\n¼Ò¼öÁ¡(4ÀÚ¸®) : %.4f\n", 1.23, 1.23, 1.23, 1.23);
+        //ì„œì‹(ì •ë ¬)
+        System.out.printf("ì™¼ìª½   ì •ë ¬ : %d\nì™¼ìª½   ì •ë ¬ : %d\nì™¼ìª½   ì •ë ¬ : %d\n", 123, 1234,12345);
+        System.out.printf("ì˜¤ë¥¸ìª½ ì •ë ¬ : %5d\nì˜¤ë¥¸ìª½ ì •ë ¬ : %5d\nì˜¤ë¥¸ìª½ ì •ë ¬ : %5d\n", 123, 1234,12345);
+        System.out.printf("float         : %f\nì†Œìˆ˜ì (0ìžë¦¬) : %.0f\nì†Œìˆ˜ì (2ìžë¦¬) : %.2f\nì†Œìˆ˜ì (4ìžë¦¬) : %.4f\n", 1.23, 1.23, 1.23, 1.23);
         System.out.println("--------------------------------------------------");
 
-        //»ê¼ú ¿¬»êÀÚ
+        //ì‚°ìˆ  ì—°ì‚°ìž
         int x, y = 0;
         x = 10; y = 10;
         System.out.printf("x + y = %d + %d = %d\n", x, y, x + y);
@@ -71,7 +71,7 @@ public class MainClass {
         System.out.printf("x / y = %d / %d = %d\n", x, y, x / y);
         System.out.printf("x %% y = %d %% %d = %d\n", x, y, x % y);
         
-        //º¹ÇÕ ´ëÀÔ ¿¬»êÀÚ
+        //ë³µí•© ëŒ€ìž… ì—°ì‚°ìž
         x = 10;
         System.out.printf("x += 10 : %d += 10 : %d\n", x, x += 10);
         System.out.printf("x -= 10 : %d -= 10 : %d\n", x, x -= 10);
@@ -79,14 +79,14 @@ public class MainClass {
         System.out.printf("x /= 10 : %d /= 10 : %d\n", x, x /= 10);
         System.out.printf("x %%= 10 : %d %%= 10 : %d\n", x, x %= 10);
 
-        //Áõ°¨ ¿¬»êÀÚ
+        //ì¦ê° ì—°ì‚°ìž
         x = 1;
         System.out.printf("++x = ++%d = %d, x = %d\n", x, ++x, x);
         System.out.printf("x++ = %d++ = %d, x = %d\n", x, x++, x);
         System.out.printf("--x = --%d = %d, x = %d\n", x, --x, x);
         System.out.printf("x-- = %d-- = %d, x = %d\n", x, x--, x);
         
-        //°ü°è ¿¬»êÀÚ
+        //ê´€ê³„ ì—°ì‚°ìž
         x = 10; y = 10;
         System.out.printf("x >  y : %d >  %d : %b\n", x, y, x >  y);
         System.out.printf("x >= y : %d >= %d : %b\n", x, y, x >= y);
@@ -95,23 +95,23 @@ public class MainClass {
         System.out.printf("x == y : %d == %d : %b\n", x, y, x == y);
         System.out.printf("x != y : %d != %d : %b\n", x, y, x != y);
         
-        //³í¸® ¿¬»êÀÚ
+        //ë…¼ë¦¬ ì—°ì‚°ìž
         boolean b1 = true;
         boolean b2 = false;
         System.out.printf("b1 && b2 : %b && %b : %b\n", b1, b2, b1 && b2);
         System.out.printf("b1 || b2 : %b && %b : %b\n", b1, b2, b1 || b2);
         System.out.printf("!b1      : !%b      : %b\n", b1, !b1);
         
-        //»ïÇ× ¿¬»êÀÚ
+        //ì‚¼í•­ ì—°ì‚°ìž
         x = 10; y = 20;
         System.out.printf("x > y ? 100 : 200 => %d > %d ? 100 : 200 => %d\n", x, y, (x > y) ? 100 : 200);
         System.out.printf("x < y ? 100 : 200 => %d < %d ? 100 : 200 => %d\n", x, y, (x < y) ? 100 : 200);
         
-        //ºñÆ® ¿¬»êÀÚ
+        //ë¹„íŠ¸ ì—°ì‚°ìž
         // & : AND, | : OR, ^ : XOR
         System.out.println("--------------------------------------------------");
         
-        //¹è¿­
+        //ë°°ì—´
         int[] arr1 = new int[5];
         arr1[0] = 100; arr1[1] = 200; arr1[2] = 300;
         System.out.printf("arr[0] = %d, arr[1] = %d, arr[2] = %d\n", arr1[0], arr1[1], arr1[2]);

@@ -3,10 +3,10 @@ package pjtTest;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//¹è¿­À» ÀÌ¿ëÇÑ Á¡¼ö °ü¸®
+//ë°°ì—´ì„ ì´ìš©í•œ ì ìˆ˜ ê´€ë¦¬
 public class ScoreMgmtByArrayClass {
     public static void main(String[] args) {
-        //1Â÷¿ø ¹è¿­
+        //1ì°¨ì› ë°°ì—´
         /*
         int intCnt = 0;
         Scanner scan = new Scanner(System.in);
@@ -14,34 +14,34 @@ public class ScoreMgmtByArrayClass {
         String[] arrName  = new String[3];
         int[]    arrScore = new int[3];
         
-        System.out.print("ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+        System.out.print("ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
         arrName[0]  = scan.next();
-        System.out.print("Á¡¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+        System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
         arrScore[0] = scan.nextInt();
         
-        System.out.print("ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+        System.out.print("ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
         arrName[1] = scan.next();
-        System.out.print("Á¡¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+        System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
         arrScore[1] = scan.nextInt();
         
-        System.out.print("ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+        System.out.print("ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
         arrName[2] = scan.next();
-        System.out.print("Á¡¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+        System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
         arrScore[2] = scan.nextInt();
 
         double dblScoreAvg = (double)((arrScore[0] + arrScore[1] + arrScore[2]) / intCnt); 
         
         System.out.println("--------------------------------------------------");
-        System.out.printf("%s \tÁ¡¼ö : %.2f\n", arrName[0], (double)arrScore[0]);
-        System.out.printf("%s \tÁ¡¼ö : %.2f\n", arrName[1], (double)arrScore[1]);
-        System.out.printf("%s \tÁ¡¼ö : %.2f\n", arrName[2], (double)arrScore[2]);
-        System.out.printf("\tÆòÁ¡ : %.2f\n", dblScoreAvg);
+        System.out.printf("%s \tì ìˆ˜ : %.2f\n", arrName[0], (double)arrScore[0]);
+        System.out.printf("%s \tì ìˆ˜ : %.2f\n", arrName[1], (double)arrScore[1]);
+        System.out.printf("%s \tì ìˆ˜ : %.2f\n", arrName[2], (double)arrScore[2]);
+        System.out.printf("\tí‰ì  : %.2f\n", dblScoreAvg);
         */
 
-        //2Â÷¿ø ¹è¿­
+        //2ì°¨ì› ë°°ì—´
         Scanner objScan  = new Scanner(System.in);
 
-        System.out.print("¸î ¸íÀÎ°¡¿ä? : ");
+        System.out.print("ëª‡ ëª…ì¸ê°€ìš”? : ");
         int intCnt = objScan.nextInt();
 
         Object[][] arrScoreMgmt = new Object[intCnt][4];
@@ -49,10 +49,10 @@ public class ScoreMgmtByArrayClass {
         for (int i = 0; i < intCnt; i++) {
             String[] arrScore = new String[3];
 
-            System.out.print("ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+            System.out.print("ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
             arrScoreMgmt[i][0]  = objScan.next();
 
-            System.out.print("±¹¾î,¿µ¾î,¼öÇĞ Á¡¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.(¿¹: 100,100,100)");
+            System.out.print("êµ­ì–´,ì˜ì–´,ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.(ì˜ˆ: 100,100,100)");
             arrScore = objScan.next().split(",");
 
             double dblScoreSum = Double.parseDouble(arrScore[0]) + Double.parseDouble(arrScore[1]) + Double.parseDouble(arrScore[2]);
@@ -63,7 +63,7 @@ public class ScoreMgmtByArrayClass {
         }
 
         System.out.println("--------------------------------------------------");
-        System.out.println("ÀÌ¸§\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ");
+        System.out.println("ì´ë¦„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· ");
         System.out.println("--------------------------------------------------");
 
         int j = 0;
